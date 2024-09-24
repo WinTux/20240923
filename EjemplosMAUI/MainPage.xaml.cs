@@ -1,24 +1,21 @@
-﻿namespace EjemplosMAUI
+﻿using System.Timers;
+
+namespace EjemplosMAUI
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
+            var temporizador = new System.Timers.Timer(1000);
+            temporizador.Elapsed += new System.Timers.ElapsedEventHandler(RedibujarReloj);
+            temporizador.Start();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void RedibujarReloj(object? sender, ElapsedEventArgs e)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            var graphicView = this.relojGraphicView;
+            graphicView.Invalidate();
         }
     }
 
