@@ -16,6 +16,11 @@ namespace EjemplosMAUI
             Debug.WriteLine("[EVENTO] Botón OnRelojPageClic clickeado");
             await Shell.Current.GoToAsync(nameof(RelojPage));
         }
+        async void OnScannerQRPageClic(object? sender, EventArgs e)
+        {
+            Debug.WriteLine("[EVENTO] Botón OnScannerQRPageClic clickeado");
+            await Shell.Current.GoToAsync(nameof(ScannerQRPage));
+        }
     }
 
 }
