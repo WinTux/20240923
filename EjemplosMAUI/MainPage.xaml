@@ -2,10 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EjemplosMAUI.MainPage"
-             xmlns:dibujable="clr-namespace:EjemplosMAUI.Dibujable">
-
-    <ContentPage.Resources>
-        <dibujable:DibujoReloj x:Key="dibujoReloj"/>
-    </ContentPage.Resources>
-    <GraphicsView Drawable="{StaticResource dibujoReloj}" x:Name="relojGraphicView"></GraphicsView>
+             Title="Mis ejemplos MAUI">
+    <VerticalStackLayout>
+        <Button Text="Ir al ejemplo del reloj" Clicked="OnRelojPageClic"/>
+    </VerticalStackLayout>
 </ContentPage>

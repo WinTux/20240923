@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using EjemplosMAUI.Pages;
+using Microsoft.Extensions.Logging;
 
 namespace EjemplosMAUI
 {
@@ -14,7 +15,7 @@ namespace EjemplosMAUI
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
-
+            builder.Services.AddTransient<RelojPage>();
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
