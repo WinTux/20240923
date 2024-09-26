@@ -1,4 +1,5 @@
-﻿using EjemplosMAUI.Pages;
+﻿using CommunityToolkit.Maui;
+using EjemplosMAUI.Pages;
 using Microsoft.Extensions.Logging;
 using ZXing.Net.Maui;
 using ZXing.Net.Maui.Controls;
@@ -16,7 +17,7 @@ namespace EjemplosMAUI
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                });
+                }).UseMauiCommunityToolkit();
             builder.UseBarcodeReader();
             /*
             builder.ConfigureMauiHandlers(h => {
@@ -27,6 +28,7 @@ namespace EjemplosMAUI
             */
             builder.Services.AddTransient<RelojPage>();
             builder.Services.AddTransient<ScannerQRPage>();
+            builder.Services.AddTransient<CommunityToolkitPage>();
 #if DEBUG
             builder.Logging.AddDebug();
 #endif

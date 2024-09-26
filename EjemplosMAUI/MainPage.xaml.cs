@@ -21,6 +21,11 @@ namespace EjemplosMAUI
             Debug.WriteLine("[EVENTO] Botón OnScannerQRPageClic clickeado");
             await Shell.Current.GoToAsync(nameof(ScannerQRPage));
         }
+        async void OnCommunityToolkitPageClic(object? sender, EventArgs e)
+        {
+            Debug.WriteLine("[EVENTO] Botón OnCommunityToolkitPageClic clickeado");
+            await Shell.Current.GoToAsync(nameof(CommunityToolkitPage));
+        }
     }
 
 }

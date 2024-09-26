@@ -9,6 +9,7 @@ namespace EjemplosMAUI
             InitializeComponent();
             Routing.RegisterRoute(nameof(RelojPage), typeof(RelojPage));
             Routing.RegisterRoute(nameof(ScannerQRPage), typeof(ScannerQRPage));
+            Routing.RegisterRoute(nameof(CommunityToolkitPage), typeof(CommunityToolkitPage));
         }
     }
 }
