@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemplosMAUI.Pages.MapaPage"
+             Title="Mapa"
+             xmlns:mapa="http://schemas.microsoft.com/dotnet/2021/maui/maps"
+             xmlns:ubica="clr-namespace:Microsoft.Maui.Devices.Sensors;assembly=Microsoft.Maui.Essentials">
+    <Grid>
+        <mapa:Map x:Name="mimapa" IsShowingUser="True" IsTrafficEnabled="False"
+                  MapType="Hybrid" MapClicked="OnMapaClic">
+            <x:Arguments>
+                <mapa:MapSpan>
+                    <x:Arguments>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.50171941059408</x:Double>
+                                <x:Double>-68.13294129306966</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <x:Double>0.01</x:Double>
+                        <x:Double>0.01</x:Double>
+                    </x:Arguments>
+                </mapa:MapSpan>
+            </x:Arguments>
+            <mapa:Map.Pins>
+                <mapa:Pin Label="Prado Paceño" Address="Avenida 16 de Julio"
+                          Type="Place">
+                    <mapa:Pin.Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.501744762153628</x:Double>
+                                <x:Double>-68.13297065746002</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                    </mapa:Pin.Location>
+                </mapa:Pin>
+            </mapa:Map.Pins>
+            <mapa:Map.MapElements>
+                <mapa:Polygon StrokeColor="Orange" StrokeWidth="7"
+                              FillColor="#88eae431">
+                    <mapa:Polygon.Geopath>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.501660232669398</x:Double>
+                                <x:Double>-68.13299708951412</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.501791740511855</x:Double>
+                                <x:Double>-68.13291575211957</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.502021114441668</x:Double>
+                                <x:Double>-68.13325226565387</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.50188349011641</x:Double>
+                                <x:Double>-68.13331765453968</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                    </mapa:Polygon.Geopath>
+                </mapa:Polygon>
+            </mapa:Map.MapElements>
+        </mapa:Map>
+    </Grid>
+</ContentPage>

@@ -30,5 +30,9 @@
 	<string>Assets.xcassets/appicon.appiconset</string>
   <key>NSCameraUsageDescription</key>
   <string>Esta aplicación necesita acceder a tu cámara para escanear QRs</string>
+  <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+  <string>¿Podemos usar tu ubicación en todo momento?</string>
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>¿Podemos usar tu ubicación mientras la app esté en uso?</string>
 </dict>
 </plist>

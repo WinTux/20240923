@@ -7,5 +7,6 @@
         <Button Text="Ir al ejemplo del reloj" Clicked="OnRelojPageClic"/>
         <Button Text="Ir al ejemplo de lector QR" Clicked="OnScannerQRPageClic"/>
         <Button Text="Ir al ejemplo de captura de trazos" Clicked="OnCommunityToolkitPageClic"/>
+        <Button Text="Ir al ejemplo de mapa" Clicked="OnMapaPageClic"/>
     </VerticalStackLayout>
 </ContentPage>
