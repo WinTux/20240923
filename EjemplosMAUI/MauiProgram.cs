@@ -13,6 +13,7 @@ namespace EjemplosMAUI
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseMauiCommunityToolkitMediaElement()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -31,6 +32,7 @@ namespace EjemplosMAUI
             builder.Services.AddTransient<ScannerQRPage>();
             builder.Services.AddTransient<CommunityToolkitPage>();
             builder.Services.AddTransient<MapaPage>();
+            builder.Services.AddTransient<MediaPage>();
 #if DEBUG
             builder.Logging.AddDebug();
 #endif

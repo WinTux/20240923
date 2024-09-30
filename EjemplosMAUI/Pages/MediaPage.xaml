@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemplosMAUI.Pages.MediaPage"
+             Title="Ejemplo de media"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+    <VerticalStackLayout>
+        <toolkit:MediaElement 
+            x:Name="video" WidthRequest="450"
+            HeightRequest="350" 
+            Source="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            Aspect="Fill"
+            ShouldShowPlaybackControls="True"
+            ShouldAutoPlay="True" ShouldKeepScreenOn="True" ShouldLoopPlayback="True"/>
+    </VerticalStackLayout>
+</ContentPage>
