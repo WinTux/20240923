@@ -65,6 +65,40 @@
                         </ubica:Location>
                     </mapa:Polygon.Geopath>
                 </mapa:Polygon>
+                <mapa:Polyline StrokeColor="Green" StrokeWidth="12">
+                    <mapa:Polyline.Geopath>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.501405774593074</x:Double>
+                                <x:Double>-68.13304353320086</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.50401813398266</x:Double>
+                                <x:Double>-68.13121209978445</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.50402245905169</x:Double>
+                                <x:Double>-68.1314241130079</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.504316563518323</x:Double>
+                                <x:Double>-68.13143313484719</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.505276725008127</x:Double>
+                                <x:Double>-68.13181205210762</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                    </mapa:Polyline.Geopath>
+                </mapa:Polyline>
             </mapa:Map.MapElements>
         </mapa:Map>
     </Grid>

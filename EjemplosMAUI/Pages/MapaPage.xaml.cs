@@ -43,5 +43,21 @@ public partial class MapaPage : ContentPage
             }
 		};
 		mimapa.MapElements.Add(recuadro);
+
+		// Uso de polyline
+		Polyline polyline = new Polyline { 
+			StrokeColor = Colors.LightSalmon,
+			StrokeWidth = 15,
+            Geopath = {
+                new Location(-16.50527434814343, -68.13181326918296),
+                new Location(-16.50570250489451, -68.13127101980193),
+                new Location(-16.506063379123233, -68.13121998457197),
+                new Location(-16.50647318463406, -68.13092653199973),
+                new Location(-16.50706648361066, -68.13077980571362),
+                new Location(-16.50752521870096, -68.13082446154122),
+                new Location(-16.50810016512342, -68.1302439358005)
+            }
+        };
+        mimapa.MapElements.Add(polyline);
     }
 }
