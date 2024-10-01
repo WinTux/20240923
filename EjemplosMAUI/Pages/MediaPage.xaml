@@ -12,5 +12,13 @@
             Aspect="Fill"
             ShouldShowPlaybackControls="True"
             ShouldAutoPlay="True" ShouldKeepScreenOn="True" ShouldLoopPlayback="True"/>
+        <Button x:Name="btn" HorizontalOptions="Center"
+                Text="Play/Pause" Clicked="OnBotonPlayPauseClic"/>
+        <toolkit:MediaElement
+            x:Name="videolocal" WidthRequest="300" HeightRequest="250"
+            Source="embed://ForBiggerBlazes.mp4"
+            ShouldShowPlaybackControls="False"/>
+        <Button x:Name="btn2" HorizontalOptions="Center"
+        Text="Play/Pause" Clicked="OnBotonPlayPause2Clic"/>
     </VerticalStackLayout>
 </ContentPage>

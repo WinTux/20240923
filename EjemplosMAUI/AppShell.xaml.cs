@@ -12,6 +12,7 @@ namespace EjemplosMAUI
             Routing.RegisterRoute(nameof(CommunityToolkitPage), typeof(CommunityToolkitPage));
             Routing.RegisterRoute(nameof(MapaPage), typeof(MapaPage));
             Routing.RegisterRoute(nameof(MediaPage), typeof(MediaPage));
+            Routing.RegisterRoute(nameof(GridLayoutPage), typeof(GridLayoutPage));
         }
     }
 }

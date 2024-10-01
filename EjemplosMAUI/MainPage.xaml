@@ -9,5 +9,6 @@
         <Button Text="Ir al ejemplo de captura de trazos" Clicked="OnCommunityToolkitPageClic"/>
         <Button Text="Ir al ejemplo de mapa" Clicked="OnMapaPageClic"/>
         <Button Text="Ir al ejemplo de media" Clicked="OnMediaPageClic"/>
+        <Button Text="Ir al ejemplo de distribución Grid" Clicked="OnGridLayoutPageClic"/>
     </VerticalStackLayout>
 </ContentPage>
