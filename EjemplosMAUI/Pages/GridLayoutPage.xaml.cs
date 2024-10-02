@@ -1,3 +1,5 @@
+using static Android.Provider.MediaStore;
+
 namespace EjemplosMAUI.Pages;
 
 public partial class GridLayoutPage : ContentPage
@@ -19,5 +21,12 @@ public partial class GridLayoutPage : ContentPage
             videolocal.Pause();
         else
             videolocal.Play();
+    }
+    public void OnBotonAudioClic(object sender, EventArgs e)
+    {
+        if (audio.CurrentState == CommunityToolkit.Maui.Core.Primitives.MediaElementState.Playing)
+            audio.Pause();
+        else
+            audio.Play();
     }
 }

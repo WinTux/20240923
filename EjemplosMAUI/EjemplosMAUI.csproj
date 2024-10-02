@@ -58,6 +58,8 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Raw\ForBiggerBlazes.mp4" />
+	  <None Remove="Resources\Raw\sample-1.ogg" />
+	  <None Remove="Resources\Raw\sample-15s.mp3" />
 	</ItemGroup>
 
 	<ItemGroup>
