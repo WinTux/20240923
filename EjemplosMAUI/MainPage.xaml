@@ -10,5 +10,6 @@
         <Button Text="Ir al ejemplo de mapa" Clicked="OnMapaPageClic"/>
         <Button Text="Ir al ejemplo de media" Clicked="OnMediaPageClic"/>
         <Button Text="Ir al ejemplo de distribución Grid" Clicked="OnGridLayoutPageClic"/>
+        <Button Text="Ir al ejemplo de archivos" Clicked="OnArchivosPageClic"/>
     </VerticalStackLayout>
 </ContentPage>

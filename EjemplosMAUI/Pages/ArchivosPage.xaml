@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemplosMAUI.Pages.ArchivosPage"
+             Title="Archivos">
+    <VerticalStackLayout>
+        <Label 
+            Text="La foto de hoy"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Image x:Name="imagen"
+               HeightRequest="200"
+               HorizontalOptions="Center"/>
+        <Button x:Name="btnCargaImagen" Text="Cargar imagen"
+                Clicked="OnElegirImagenClic"/>
+        <HorizontalStackLayout>
+            <Image x:Name="imagen1"
+                HeightRequest="160"
+                WidthRequest="100"
+                HorizontalOptions="Center"/>
+            <Image x:Name="imagen2"
+                HeightRequest="160"
+                WidthRequest="100"
+                HorizontalOptions="Center"/>
+            <Image x:Name="imagen3"
+                HeightRequest="160"
+                WidthRequest="100"
+                HorizontalOptions="Center"/>
+        </HorizontalStackLayout>
+        <Button x:Name="btnCargaImagenes" Text="Cargar imagenes"
+        Clicked="OnElegirImagenesClic"/>
+    </VerticalStackLayout>
+</ContentPage>

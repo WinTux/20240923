@@ -41,6 +41,11 @@ namespace EjemplosMAUI
             Debug.WriteLine("[EVENTO] Botón OnGridLayoutClic clickeado");
             await Shell.Current.GoToAsync(nameof(GridLayoutPage));
         }
+        async void OnArchivosPageClic(object? sender, EventArgs e)
+        {
+            Debug.WriteLine("[EVENTO] Botón OnArchivosClic clickeado");
+            await Shell.Current.GoToAsync(nameof(ArchivosPage));
+        }
     }
 
 }

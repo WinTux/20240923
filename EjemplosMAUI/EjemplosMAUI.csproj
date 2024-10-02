@@ -73,6 +73,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Pages\ArchivosPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\CommunityToolkitPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
