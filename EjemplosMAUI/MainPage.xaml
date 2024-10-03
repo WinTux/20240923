@@ -12,5 +12,6 @@
         <Button Text="Ir al ejemplo de distribución Grid" Clicked="OnGridLayoutPageClic"/>
         <Button Text="Ir al ejemplo de archivos" Clicked="OnArchivosPageClic"/>
         <Button Text="Ir al ejemplo de fotos y video" Clicked="OnFotosVideosMeidaPickerPageClic"/>
+        <Button Text="Ir al ejemplo de camara" Clicked="OnCameraPageClic"/>
     </VerticalStackLayout>
 </ContentPage>
