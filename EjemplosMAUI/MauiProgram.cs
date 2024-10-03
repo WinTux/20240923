@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Maui;
+using CommunityToolkit.Maui.Storage;
 using EjemplosMAUI.Pages;
 using Microsoft.Extensions.Logging;
 using ZXing.Net.Maui;
@@ -28,6 +29,8 @@ namespace EjemplosMAUI
                 h.AddHandler(typeof(BarcodeGeneratorView), typeof(BarcodeGeneratorViewHandler));
             });
             */
+            builder.Services.AddSingleton<IFileSaver>(FileSaver.Default);
+
             builder.Services.AddTransient<RelojPage>();
             builder.Services.AddTransient<ScannerQRPage>();
             builder.Services.AddTransient<CommunityToolkitPage>();
@@ -35,6 +38,7 @@ namespace EjemplosMAUI
             builder.Services.AddTransient<MediaPage>();
             builder.Services.AddTransient<GridLayoutPage>();
             builder.Services.AddTransient<ArchivosPage>();
+            builder.Services.AddTransient<FotosVideosMeidaPickerPage>();
 #if DEBUG
             builder.Logging.AddDebug();
 #endif

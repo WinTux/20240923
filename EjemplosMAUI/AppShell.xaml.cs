@@ -14,6 +14,7 @@ namespace EjemplosMAUI
             Routing.RegisterRoute(nameof(MediaPage), typeof(MediaPage));
             Routing.RegisterRoute(nameof(GridLayoutPage), typeof(GridLayoutPage));
             Routing.RegisterRoute(nameof(ArchivosPage), typeof(ArchivosPage));
+            Routing.RegisterRoute(nameof(FotosVideosMeidaPickerPage), typeof(FotosVideosMeidaPickerPage));
         }
     }
 }

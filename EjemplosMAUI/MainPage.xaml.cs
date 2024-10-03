@@ -46,6 +46,11 @@ namespace EjemplosMAUI
             Debug.WriteLine("[EVENTO] Botón OnArchivosClic clickeado");
             await Shell.Current.GoToAsync(nameof(ArchivosPage));
         }
+        async void OnFotosVideosMeidaPickerPageClic(object? sender, EventArgs e)
+        {
+            Debug.WriteLine("[EVENTO] Botón OnFotosVideosMeidaPickerPageClic clickeado");
+            await Shell.Current.GoToAsync(nameof(FotosVideosMeidaPickerPage));
+        }
     }
 
 }
