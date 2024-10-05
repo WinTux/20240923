@@ -1,4 +1,3 @@
-using static Android.Provider.MediaStore;
 
 namespace EjemplosMAUI.Pages;
 
